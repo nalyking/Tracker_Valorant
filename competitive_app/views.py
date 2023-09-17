@@ -10,6 +10,11 @@ def register(request):
     }))
 
 def home(request):
+    return HttpResponse("Pagina Home Tracker")
+
+def login(request):
     return HttpResponse(json.dumps({
-        "vc esta na tela de home":"home"
+        "user_name": "user_name",
+        "password": "password",
+        "save": "save",
     }))

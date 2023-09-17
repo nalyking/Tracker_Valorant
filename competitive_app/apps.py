@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class EngineConfig(AppConfig):
+class CompetitiveAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'engine'
+    name = 'competitive_app'

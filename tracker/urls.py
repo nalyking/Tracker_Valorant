@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import printar
+from .view import Tracker
+
 
 
 urlpatterns = [
-    path("tracker", printar, name="qualquername"),
+    path("admin/", admin.site.urls),
+    path("tracker/", include('competitive_app.urls')),
+    path("", Tracker,name="Tracker")
 ]

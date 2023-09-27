@@ -23,5 +23,4 @@ from .views import Tracker
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("tracker/", include('competitive_app.urls')),
-    path("", Tracker,name="Tracker")
 ]

@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'competitive_app',
+    'session_app_tracker',
 ]
 
 MIDDLEWARE = [

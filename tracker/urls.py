@@ -16,11 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import Tracker
-
-
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("tracker/", include('competitive_app.urls')),
+    path('admin/', admin.site.urls),
+    path('api/', include('session_app_tracker.urls')),
 ]

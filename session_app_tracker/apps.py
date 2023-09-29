@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CompetitiveAppConfig(AppConfig):
+class SessionAppTrackerConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'competitive_app'
+    name = 'session_app_tracker'
